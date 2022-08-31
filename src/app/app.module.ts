@@ -25,7 +25,7 @@ const routes : Routes = [
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDmTHhsisKG4CENpyS93Y_R1gN0PhcE6F8'
+      apiKey: ''
     }),
     AgmDirectionModule,
     BrowserAnimationsModule,
