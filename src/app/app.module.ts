@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponent } from './material/material.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { environment } from '../environments/environment';
 
 const routes : Routes = [
   { path: 'material', component: MaterialComponent },
@@ -25,7 +26,7 @@ const routes : Routes = [
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: ''
+      apiKey: environment.googleMapsApiKey
     }),
     AgmDirectionModule,
     BrowserAnimationsModule,
