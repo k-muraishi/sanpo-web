@@ -1,18 +1,20 @@
-<h1>{{ title }}</h1>
-<agm-map
-  [latitude]="latitude"
-  [longitude]="longitude"
-  [zoom]="zoom"
-  (mapReady)="mapReadyHandler($event)">
-  <agm-marker
-  [latitude]="latitude"
-  [longitude]="longitude"
-  [label]="label"
-  ></agm-marker>
-</agm-map>
-<div class="controls">
-  <button (click)="setFrom()">出発地を決定</button>
-  <button (click)="setTo()">目的地を決定</button>
-  <button (click)="play()">散歩する</button>
-  <button (click)="reset()">戻る</button>
+<div class="map-container">
+  <h1 class="map-title">{{ title }}</h1>
+  <agm-map
+    [latitude]="latitude"
+    [longitude]="longitude"
+    [zoom]="zoom"
+    (mapReady)="mapReadyHandler($event)">
+    <agm-marker
+    [latitude]="latitude"
+    [longitude]="longitude"
+    [label]="label"
+    ></agm-marker>
+  </agm-map>
+  <div class="controls">
+    <button (click)="setFrom()">出発地を決定</button>
+    <button (click)="setTo()">目的地を決定</button>
+    <button (click)="play()">散歩する</button>
+    <button (click)="reset()">戻る</button>
+  </div>
 </div>

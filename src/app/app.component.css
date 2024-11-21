@@ -19,3 +19,50 @@ div.content {
   margin:10px;
 }
 
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+agm-map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-title {
+  position: absolute;
+  top: 10px; /* 地図内の上部から10px下げる */
+  left: 10px; /* 地図内の左端から10px内側に配置 */
+  background-color: white; /* 背景色を白に設定 */
+  padding: 5px 10px; /* タイトルの内側に余白を設定 */
+  border-radius: 5px; /* 角を丸くする（任意） */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 影を付けて目立たせる */
+  font-size: 30px; /* フォントサイズを調整 */
+  font-weight: bold; /* 文字を太字に設定 */
+  z-index: 1000; /* 地図より上に表示されるようにする */
+  color: black; /* 文字色を黒に設定 */
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}

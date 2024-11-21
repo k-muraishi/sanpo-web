@@ -61,7 +61,7 @@ export class AppComponent {
     this.label = "出発地を決めてね！"
   }
   reset() {
-    this.marker.reset();
+    window.location.reload()
   }
 
   // mock directions api
@@ -96,7 +96,7 @@ export class AppComponent {
         title: 'Travel Marker',
         animation: google.maps.Animation.DROP,
         icon: {
-          url: 'https://i.imgur.com/DHZKIn4.png',
+          url: 'https://my.microsoftpersonalcontent.com/personal/fbbb8642c60c4b7d/_layouts/15/download.aspx?UniqueId=467ac523-0cef-4e6c-821b-83deb6a61324&Translate=false&tempauth=v1e.eyJzaXRlaWQiOiJjM2Y4MjAwZC1iZmE2LTQ2ZTQtOWU2OC1iMGU4N2M3Nzc0MWUiLCJhcHBpZCI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDA0ODE3MTBhNCIsImF1ZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9teS5taWNyb3NvZnRwZXJzb25hbGNvbnRlbnQuY29tQDkxODgwNDBkLTZjNjctNGM1Yi1iMTEyLTM2YTMwNGI2NmRhZCIsImV4cCI6IjE3MzIyMDEyMDAifQ.T3tSJvpgQuyrFKkk_MB6Do_EnkYmCBx1WJfjnVA7Pdi17wEWjdXBBx7BytGqBGP6-ph6Ssbst3kvxCFLzwzjeHOK3yk0K21bEo3qlWATfNi5e3FZV5COJol_NYWsdKkEpTqwZ9MSI3d2GDyFELBp4172qVOqoxf1nKT44WzPEcL4F3ksfZSuurxOJPdabvYg9Nz1SYeXAwDDb23Z3yRvo8F_cRTPsrzbHFSKQVpyBfCxmhWixSWd9BISB4gGy3YY9h8DaSux4AhxBpYlLcHhhXoy7LFwKKaehTxvRq1WzsoXbitYZ_O6Pvc0vJr66ZL9Ke4QDPO2r_-hqt-7R9mTACB2o_rVB3KRQlkB1KcsIs1pWgs8vKgIYm_l64s6_5qx4q00ha69Jqp-P6M-ZpSeQNh76SjLYsHv5jrpehQ-xeA.5XbE_McD4D9uqgQJGIYaNyJ_DB0n9nJpXeVBYxI2q3c&ApiVersion=2.0',
           // This marker is 20 pixels wide by 32 pixels high.
           animation: google.maps.Animation.DROP,
           // size: new google.maps.Size(256, 256),
